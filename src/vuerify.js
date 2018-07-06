@@ -82,8 +82,7 @@ Vuerify.prototype.check = function (fields) {
   fields = fields || Object.keys(rules)
 
   return fields.map(field => {
-    console.log(vm)
-    return check.call(vm, rules[field], field, parse(field)(vm._data))
+    return check.call(vm, rules[field], field, parse(field)(vm))
   }
   ).indexOf(false) === -1
 }
