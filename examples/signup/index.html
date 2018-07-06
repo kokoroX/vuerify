@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>signup</title>
-  <script src="//github.elemecdn.com/vuejs/vue/v2.0.0-beta.1/dist/vue.min.js"></script>
+  <script src="//cdn.jsdelivr.net/vue/2.0.0-rc.8/vue.min.js"></script>
 </head>
 <body>
   <div id="app">
@@ -11,6 +11,7 @@
       <input type="email" v-model="username" placeholder="username">
       <input type="password" v-model="password" placeholder="password">
       <input type="password" v-model="conform" placeholder="conform">
+      <input type="email" v-model="email">
       <input type="submit" :disabled="invalid">
     </form>
     <ul>

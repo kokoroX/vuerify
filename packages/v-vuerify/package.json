@@ -1,6 +1,6 @@
 {
   "name": "v-vuerify",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "Vuerify directive for Vue 1.x",
   "main": "dist/vuerify.common.js",
   "repository": {
@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/qingwei-li/vuerify#readme",
   "devDependencies": {
-    "babel-preset-es2015-rollup": "^1.1.1",
-    "rollup": "^0.34.1"
+    "rollup": "^0.34.1",
+    "rollup-plugin-buble": "^0.14.0"
   }
 }
