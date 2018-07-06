@@ -132,7 +132,10 @@ Vuerify.prototype.check = function (fields) {
 
   fields = fields || Object.keys(rules);
 
-  return fields.map(function (field) { return check.call(vm, rules[field], field, parse(field)(vm._data)); }
+  return fields.map(function (field) {
+    console.log(vm);
+    return check.call(vm, rules[field], field, parse(field)(vm._data))
+  }
   ).indexOf(false) === -1
 };
 
